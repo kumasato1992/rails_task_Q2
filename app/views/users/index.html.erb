@@ -1,0 +1,8 @@
+<%= link_to "投稿画面へ", "/users/new" %>
+<% @users.each do |user| %>
+  <p>
+    <%= user.date %>
+    <%= user.wheather %>
+    <%= user.message %>
+  </p>
+<% end %>

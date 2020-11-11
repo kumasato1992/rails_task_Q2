@@ -1,0 +1,7 @@
+<p>新規投稿</p>
+<%= form_with model: @user, url: "/users", method: :post, local: true do |f| %>
+  <p>日付:<%= f.text_field :date %></p>
+  <p>天気:<%= f.text_field :wheather %></p>
+  <p>一言:<%= f.text_field :messsage %></p>
+  <%= f.submit "送信" %>
+<% end %>
