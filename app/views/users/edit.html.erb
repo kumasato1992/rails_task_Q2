@@ -1,0 +1,7 @@
+<p>更新</p>
+<%= form_with model: @user, url: "/users/#{@user.id}", method: :patch, local: true do |f| %>
+  <p><%= f.text_field :date %></p>
+  <p><%= f.text_field :weather %></p>
+  <p><%= f.text_field :message %></p>
+  <%= f.submit "送信" %>
+<% end %>

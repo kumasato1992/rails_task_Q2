@@ -2,7 +2,9 @@
 <% @users.each do |user| %>
   <p>
     <%= user.date %>
-    <%= user.wheather %>
+    <%= user.weather %>
     <%= user.message %>
+    <%= link_to '削除', "/users/#{user.id}", method: :delete, data: {confirm: "削除しますか？"} %>
+    <%= link_to '編集', "/users/#{user.id}/edit", method: :get %>
   </p>
 <% end %>

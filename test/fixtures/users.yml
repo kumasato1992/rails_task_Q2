@@ -2,10 +2,10 @@
 
 one:
   date: 2020-11-11
-  wheather: MyString
+  weather: MyString
   message: MyString
 
 two:
   date: 2020-11-11
-  wheather: MyString
+  weather: MyString
   message: MyString
